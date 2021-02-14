@@ -34,13 +34,19 @@ body {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 1064px) {
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
 /* HEADER & TOP-CONTAINER */
 
 .wrapper-top {
     background-image: url(img/bg_top.png);
-    background-size: 100%;
+    background-size: cover;
     background-color: #333;
-    background-attachment: fixed;
 }
 
 /* HEADER */
@@ -69,18 +75,29 @@ header {
 
 header nav ul {
     display: flex;
-    align-items: center;
 }
 
 header nav li {
-    margin-top: 34px;
+    margin-top: 36px;
     margin-left: 66px;
+}
+
+@media screen and (max-width: 1064px) {
+    header nav li {
+        margin-left: 44px;
+    } 
 }
 
 header a {
     font-size: 23px;
 
     color: #f7f7f7;
+}
+
+@media screen and (max-width: 1064px) {
+    header a {
+        font-size: 18px;
+    }
 }
 
 header li:hover {
@@ -115,10 +132,9 @@ header li:active {
 /* TOP-CONTAINER */
 
 .content-top {
-    height: 48.5vw;
     box-sizing: border-box;
-    padding-top: 8.5%;
-    padding-bottom: 17.75%;
+    padding-top: 10.5%;
+    padding-bottom: 20%;
 
     display: flex;
     flex-direction: column;
@@ -126,7 +142,16 @@ header li:active {
     align-items: start;
 }
 
+
+@media screen and (max-width: 1064px) {
+    .content-top {
+        padding-bottom: 12%;
+    }
+}
+
 .content-top h2 {
+    margin-bottom: 4.5%;
+
     font-size: 48px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -134,14 +159,28 @@ header li:active {
     color: #CD6326;
 }
 
+@media screen and (max-width: 1064px) {
+    .content-top h2 {
+        font-size: 32px;
+    }
+}
+
 .content-top p {
-    width: 274px;
+    width: 272px;
+    margin-bottom: 4%;
 
     font-size: 18px;
     line-height: 27px;
     text-align: justify;
 
     color: #f7f7f7;
+}
+
+@media screen and (max-width: 1064px) {
+    .content-top p {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 .button-solid {
@@ -155,6 +194,12 @@ header li:active {
     background-color: #CD6326;
     border: 2px solid #CD6326;
     border-radius: 5px; 
+}
+
+@media screen and (max-width: 1064px) {
+    .button-solid {
+        font-size: 18px;
+    }
 }
 
 .button-solid:hover {
