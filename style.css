@@ -40,7 +40,10 @@ body {
     background-image: url(img/bg_top.png);
     background-size: 100%;
     background-color: #333;
+    background-attachment: fixed;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -92,8 +95,6 @@ header a:active {
 }
 
 .button-hollow {
-    padding: 7px 23px;
-
     border: 2px solid #CD6326;
     border-radius: 5px;
 
@@ -110,3 +111,57 @@ header a:active {
     border: 2px solid #8F5613;
 }
 
+/* TOP-CONTAINER */
+
+.content-top {
+    height: 48.5vw;
+    box-sizing: border-box;
+    padding-top: 8%;
+    padding-bottom: 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.content-top h2 {
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 2px;
+
+    color: #CD6326;
+}
+
+.content-top p {
+    width: 274px;
+
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+
+    color: #f7f7f7;
+}
+
+.button-solid {
+    padding: 14px 42px;
+
+    font-size: 23px;
+    font-weight: 200;
+
+    color: #f7f7f7;
+
+    background-color: #CD6326;
+    border: 2px solid #CD6326;
+    border-radius: 5px; 
+}
+
+.button-solid:hover {
+    background-color: #E39128;
+    border: 2px solid #E39128;
+}
+
+.button-solid:active {
+    background-color: #8F5613;
+    border: 2px solid #8F5613;
+}
