@@ -82,7 +82,7 @@ header nav li {
     margin-left: 66px;
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1360px) {
     header nav li {
         margin-left: 44px;
     } 
@@ -94,7 +94,7 @@ header a {
     color: #f7f7f7;
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1360px) {
     header a {
         font-size: 18px;
     }
@@ -103,6 +103,7 @@ header a {
 header li:hover {
     border-bottom: 2px solid #CD6326;
     color: #CD6326;
+    transition: all 0.2s ease-out;
 }
 
 header li:active {
@@ -122,6 +123,7 @@ header li:active {
 .button-hollow:hover {
     background-color: #CD6326;
     border: 2px solid #CD6326;
+    transition: all 0.2s ease-out;
 }
 
 .button-hollow:active {
@@ -143,7 +145,7 @@ header li:active {
 }
 
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1360px) {
     .content-top {
         padding-bottom: 12%;
     }
@@ -159,7 +161,7 @@ header li:active {
     color: #CD6326;
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1360px) {
     .content-top h2 {
         font-size: 32px;
     }
@@ -176,7 +178,7 @@ header li:active {
     color: #f7f7f7;
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1360px) {
     .content-top p {
         font-size: 14px;
         line-height: 21px;
@@ -196,7 +198,7 @@ header li:active {
     border-radius: 5px; 
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1360px) {
     .button-solid {
         font-size: 18px;
     }
@@ -205,6 +207,7 @@ header li:active {
 .button-solid:hover {
     background-color: #E39128;
     border: 2px solid #E39128;
+    transition: all 0.2s ease-out;
 }
 
 .button-solid:active {
@@ -225,6 +228,12 @@ main {
     background-color: #ccc;
 }
 
+@media screen and (max-width: 1360px) {
+    main {
+        font-size: 18px;
+    }  
+}
+
 main h2 {
     margin-top: 10%;
     margin-bottom: 1.5%;
@@ -235,6 +244,12 @@ main h2 {
     font-weight: normal;
 
     color: #333;
+}
+
+@media screen and (max-width: 1360px) {
+    main h2 {
+        font-size: 32px;
+    }
 }
 
 .slider {
@@ -254,6 +269,7 @@ main h2 {
 
 .arrow:hover {
     color: #333;
+    transition: all 0.2s ease-out;
 }
 
 .arrow:active {
@@ -264,13 +280,25 @@ main h2 {
     width: 90%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     overflow: hidden;
 }
 
 .slider-item {
     position: relative;
+
+    margin-right: 2.5%;
+    margin-left: 3%;
+}
+
+.slider-item img {
+    max-width: 100%;
+}
+
+.slider-item img:hover {
+    opacity: 80%;
+    transition: all 0.3s ease-out;
 }
 
 .slider-item h3,
@@ -288,6 +316,12 @@ main h2 {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 1360px) {
+    .slider-item h3 {
+        font-size: 18px;
+    }
+}
+
 .slider-item p {
     bottom: 13.5%;
 
@@ -295,8 +329,21 @@ main h2 {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 1360px) {
+    .slider-item p {
+        font-size: 15px;
+    }
+}
+
 main h3 {
     font-size: 27px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1360px) {
+    main h3 {
+        font-size: 21px;
+    }
 }
 
 .email-form-wrapper {
@@ -307,27 +354,43 @@ main h3 {
     margin-top: 9%;
     margin-bottom: 36.25%;
 
-    width: 77%;
+    width: 79%;
     padding: 16px 16px;
 
     border-width: 1px;
     border-radius: 5px;
     border-color: #666;
-    background-color: transparent;
+    background-color: #ccc;
 
     font-size: 23px;
 }
 
 .email-submit {
-    margin-left: -1.5%;
+    margin-left: -3.5%;
 
     width: 120px;
     padding: 17px 16px;
 
     border-width: 0;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     background-color: #CD6326;
 
     font-size: 23px;
     color: #f7f7f7;
+}
+
+.email-submit:hover {
+    background-color: #E39128;
+    transition: all 0.2s ease-out;
+}
+
+.email-submit:active {
+    background-color: #8F5613;
+}
+
+@media screen and (max-width: 1360px) {
+    .email-submit,
+    .email-input {
+        font-size: 18px;
+    }
 }
