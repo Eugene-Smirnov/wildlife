@@ -292,6 +292,10 @@ main h2 {
     margin-left: 3%;
 }
 
+.slider-item :hover {
+    cursor: pointer;
+}
+
 .slider-item img {
     max-width: 100%;
 }
@@ -393,4 +397,109 @@ main h3 {
     .email-input {
         font-size: 18px;
     }
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    background-image: url(img/bg_footer.png);
+    background-size: cover;
+    background-color: #333;
+}
+
+footer .logo {
+    padding-top: 0;
+    width: 25%;
+}
+
+footer nav {
+    margin-top: 13.75%;
+    margin-bottom: 13.5%;
+    width: 44.5%;
+}
+
+footer nav ul {
+    display: flex;
+}
+
+footer nav li:not(:last-child) {
+    margin-right: 16.5%;
+}
+
+footer a {
+    font-size: 23px;
+    font-weight: lighter;
+
+    color: #f7f7f7;
+}
+
+@media screen and (max-width: 1360px) {
+    footer a {
+        font-size: 18px;
+    }
+}
+
+footer nav li a:hover {
+    border-bottom: 2px solid #CD6326;
+    color: #CD6326;
+    transition: all 0.2s ease-out;
+}
+
+footer nav li a:active {
+    border-bottom: 2px solid #8F5613;
+    color: #8F5613;
+}
+
+.links {
+    margin-top: 13%;
+    width: 20.5%;
+}
+
+.links ul {
+    display: flex;
+    box-sizing: content-box;
+}
+
+.links li:not(:last-child) {
+    margin-right: 7%;
+
+    box-sizing: border-box;
+}
+
+.links a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.links a:hover {
+    background-color: rgba(102, 102, 102, 0.5);
+    transition: 0.3s ease-out;
+}
+
+.links a:active {
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: 0.3s ease-out;
+}
+
+.link-facebook {
+    background-image: url(img/facebook.svg);
+}
+
+.link-insta {
+    background-image: url(img/insta.svg);
+}
+
+.link-pinterest {
+    background-image: url(img/pinterest.svg);
+}
+
+.link-telegram {
+    background-image: url(img/telegram.svg);
 }
